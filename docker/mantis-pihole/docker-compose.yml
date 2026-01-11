@@ -1,0 +1,31 @@
+services:
+  mantis:
+    image: pihole/pihole:latest
+    container_name: mantis-pihole
+    hostname: mantis.rosnertech.dev.br
+    restart: unless-stopped
+
+    environment:
+      TZ: America/Sao_Paulo
+      FTLCONF_webserver_api_password: "SUA_SENHA_FORTE_AQUI"
+
+    volumes:
+      - ./etc-pihole:/etc/pihole
+      - ./etc-dnsmasq.d:/etc/dnsmasq.d
+
+    cap_add:
+      - NET_ADMIN
+
+    networks:
+      avengers_net:
+        ipv4_address: 192.168.20.5   # ajuste conforme seu lab
+
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "8081:80"   # acesso web local (evita conflito com proxy)
+
+networks:
+  avengers_net:
+    name: avengers_net
+    driver: bridge
