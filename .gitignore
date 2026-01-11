@@ -1,0 +1,21 @@
+# Docker
+**/data/
+**/letsencrypt/
+**/volumes/
+**/etc-pihole/
+**/etc-dnsmasq.d/
+
+# Environment
+.env
+.env.*
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
