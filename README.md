@@ -8,22 +8,24 @@ O objetivo é criar um ambiente **realista, seguro e escalável**, servindo como
 
 ## 📁 Estrutura do Repositório
 
+```text
 homelab/
-├── docs/                 # Documentação das aplicações
+├── docs/                     # Documentação das aplicações
 │   ├── proxmox.md
 │   ├── opnsense.md
 │   ├── nginx-proxy-manager.md
 │   ├── pihole.md
 │   └── portainer.md
 │
-├── docker/               # Docker Compose por aplicação
+├── docker/                   # Docker Compose por aplicação
 │   ├── gamora-proxy/
 │   ├── mantis-pihole/
 │   └── nebulosa-portainer/
 │
-├── scripts/              # Scripts auxiliares
+├── scripts/                  # Scripts auxiliares
 ├── .gitignore
 └── README.md
+
 
 📌 **Toda a documentação detalhada das aplicações está centralizada na pasta `/docs`.**
 
