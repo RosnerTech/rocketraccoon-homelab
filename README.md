@@ -25,7 +25,7 @@ homelab/
 ├── scripts/                  # Scripts auxiliares
 ├── .gitignore
 └── README.md
-
+```
 
 📌 **Toda a documentação detalhada das aplicações está centralizada na pasta `/docs`.**
 
